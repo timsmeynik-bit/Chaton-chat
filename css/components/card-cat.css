@@ -1,0 +1,56 @@
+/* Cat card: the whole card is a link */
+.card-cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  text-align: center;
+  color: #2D2A32;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 10px 30px rgba(255, 143, 171, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-cat:hover {
+  color: #2D2A32;
+  transform: translateY(-8px) rotate(-1.5deg);
+  box-shadow: 0px 18px 40px rgba(255, 143, 171, 0.4);
+}
+
+.card-cat h3 {
+  font-size: 30px;
+  margin: 5px 0px;
+}
+
+.card-cat p {
+  color: #8A7F8E;
+  margin: 0px 0px 15px 0px;
+}
+
+.card-cat-role {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 2px 14px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #FF5C8A;
+  background-color: #FFE4EC;
+  border-radius: 20px;
+}
+
+.card-cat-link {
+  font-weight: 800;
+  color: #FF7A3D;
+}
+
+/* Big version for the parents */
+.card-cat-big h3 {
+  font-size: 38px;
+}
+
+.card-cat-big .avatar-cat {
+  width: 220px;
+  height: 220px;
+}

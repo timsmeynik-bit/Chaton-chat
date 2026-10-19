@@ -1,0 +1,45 @@
+/* Hugs counter ("Câlinomètre") */
+.calin-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-calin {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  color: #2D2A32;
+  background-color: white;
+  padding: 8px 18px 8px 8px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 6px 18px rgba(255, 143, 171, 0.25);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-calin:hover {
+  transform: translateY(-4px);
+}
+
+.btn-calin:active {
+  transform: scale(0.92);
+}
+
+.calin-count {
+  min-width: 26px;
+  padding: 0px 8px;
+  color: white;
+  background-color: #FF8FAB;
+  border-radius: 20px;
+}
+
+.calin-total {
+  margin-top: 30px;
+  font-size: 22px;
+}

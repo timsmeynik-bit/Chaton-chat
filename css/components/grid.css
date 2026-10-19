@@ -1,0 +1,25 @@
+/* Flexbox grid: items wrap to the next line when there is no more room */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* 2 items per row */
+.grid-2 > * {
+  width: calc(50% - 15px);
+}
+
+/* 3 items per row */
+.grid-3 > * {
+  width: calc(33.33% - 20px);
+}
+
+/* On small screens (phones): 1 item per row */
+@media (max-width: 750px) {
+  .grid-2 > *,
+  .grid-3 > * {
+    width: 100%;
+  }
+}

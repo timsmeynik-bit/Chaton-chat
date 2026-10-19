@@ -1,0 +1,143 @@
+/* Page of one cat: photo on the left, information on the right */
+.back-link {
+  font-weight: 800;
+}
+
+.cat-profile {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 30px;
+}
+
+.cat-photo {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.cat-photo-img {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cat-photo-img:hover {
+  transform: rotate(-4deg) scale(1.03);
+}
+
+/* Little speech bubble next to the photo */
+.cat-bubble {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+  background-color: white;
+  padding: 8px 18px;
+  border-radius: 20px 20px 20px 4px;
+  box-shadow: 0px 6px 18px rgba(255, 143, 171, 0.35);
+  transition: transform 0.2s ease;
+}
+
+.cat-bubble-pop {
+  transform: scale(1.25) rotate(-5deg);
+}
+
+.cat-info {
+  flex-grow: 1;
+}
+
+.cat-info h1 {
+  font-size: 64px;
+  margin: 10px 0px 0px 0px;
+}
+
+.cat-nickname {
+  font-family: "Fredoka", sans-serif;
+  font-size: 24px;
+  color: #FF7A3D;
+  margin-top: 0px;
+}
+
+.cat-facts {
+  list-style: none;
+  padding: 20px 25px;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: 0px 10px 30px rgba(255, 143, 171, 0.2);
+}
+
+.cat-facts li {
+  padding: 8px 0px;
+  border-bottom: 2px dashed #FFE4EC;
+}
+
+.cat-facts li:last-child {
+  border-bottom: none;
+}
+
+.cat-facts span {
+  display: inline-block;
+  width: 150px;
+  font-weight: 800;
+  color: #FF5C8A;
+}
+
+/* Previous / next cat */
+.cat-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+/* Row with the whole family */
+.family {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.family-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 100px;
+  padding: 12px 0px;
+  font-weight: 800;
+  color: #2D2A32;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.family-item .avatar-mini {
+  width: 64px;
+  height: 64px;
+}
+
+.family-item:hover,
+.family-item-active {
+  background-color: white;
+  transform: translateY(-5px);
+}
+
+/* Phones: photo above the text */
+@media (max-width: 750px) {
+  .cat-profile {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cat-photo-img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .cat-info h1 {
+    font-size: 48px;
+  }
+}

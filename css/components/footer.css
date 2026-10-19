@@ -1,0 +1,39 @@
+/* Footer */
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  background-color: #2D2A32;
+}
+
+.footer p {
+  margin: 5px 0px;
+}
+
+.footer a {
+  font-weight: 800;
+  color: #FFB27A;
+}
+
+.footer a:hover {
+  color: #FF8FAB;
+}
+
+/* Table of photo credits */
+.credits {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.credits th,
+.credits td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 2px dashed #FFE4EC;
+}
+
+.credits th {
+  font-family: "Fredoka", sans-serif;
+  color: #FF5C8A;
+}

@@ -1,0 +1,106 @@
+/* Importing Google fonts: Fredoka (round & cute) for titles, Nunito for text */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;700;800&display=swap");
+
+/* Importing component files */
+@import url("components/navbar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/grid.css");
+@import url("components/card-cat.css");
+@import url("components/avatar.css");
+@import url("components/gallery.css");
+@import url("components/calin.css");
+@import url("components/cat-page.css");
+@import url("components/footer.css");
+@import url("components/hearts.css");
+
+/* Colors of the site:
+   orange  #FF9F45   (Meow)
+   black   #2D2A32   (Miaou)
+   pink    #FF8FAB
+   cream   #FFF8F0               */
+
+/* General style rules */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #2D2A32;
+  /* little paw-print dots in the background */
+  background-color: #FFF8F0;
+  background-image: radial-gradient(#FFE3D3 2px, transparent 2px);
+  background-size: 28px 28px;
+}
+
+h1, h2, h3 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: #FF7A3D;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FF5C8A;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+/* Sections */
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-pink {
+  background-color: #FFE4EC;
+}
+
+.section-cream {
+  background-color: #FFF1E0;
+}
+
+.section-title {
+  font-size: 42px;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+
+.section-title span {
+  font-size: 32px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #8A7F8E;
+  margin: 0px 0px 40px 0px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card-white {
+  background-color: white;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0px 10px 30px rgba(255, 143, 171, 0.2);
+}

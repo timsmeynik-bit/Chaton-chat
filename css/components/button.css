@@ -1,0 +1,45 @@
+/* Main button: round, orange to pink, bounces on hover */
+.btn-cute {
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+  background-image: linear-gradient(135deg, #FF9F45, #FF8FAB);
+  padding: 14px 30px;
+  margin: 5px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 8px 20px rgba(255, 143, 171, 0.4);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-cute:hover {
+  color: white;
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0px 12px 25px rgba(255, 143, 171, 0.6);
+}
+
+.btn-cute:active {
+  transform: scale(0.95);
+}
+
+/* Secondary button: transparent with a border */
+.btn-cute-ghost {
+  display: inline-block;
+  font-weight: 800;
+  color: #FF7A3D;
+  padding: 12px 28px;
+  margin: 5px;
+  border: 3px solid #FF9F45;
+  border-radius: 40px;
+  transition: all 0.2s ease;
+}
+
+.btn-cute-ghost:hover {
+  color: white;
+  background-color: #FF9F45;
+  border-color: #FF9F45;
+  transform: translateY(-3px);
+}
